@@ -15,8 +15,6 @@ from models.base_model import BaseModel
 
 class TestAmenity(unittest.TestCase):
 
-    """Test Cases for the Amenity class."""
-
     def setUp(self):
         """Sets up test methods."""
         pass
@@ -47,6 +45,7 @@ class TestAmenity(unittest.TestCase):
         for k, v in attributes.items():
             self.assertTrue(hasattr(o, k))
             self.assertEqual(type(getattr(o, k, None)), v)
+
 
 if __name__ == "__main__":
     unittest.main()
