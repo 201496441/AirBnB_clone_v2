@@ -9,7 +9,6 @@ from models.city import City
 import shlex
 import models
 
-
 class State(BaseModel, Base):
     """This is the class representing State
     Attributes:
