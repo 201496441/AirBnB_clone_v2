@@ -79,3 +79,9 @@ class DBStorage:
     def close(self):
         """Close the working SQLAlchemy session."""
         self.__session.close()
+
+'''
+    def close(self):
+        """call reload() method for deserializing the JSON file to objects"""
+        self.reload()
+'''
